@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1.3</title>
+</head>
+
+<script>
+function wiki() {
+	document.getElementById('frame').src = "https://www.wikipedia.org";
+}
+function hackerrank() {
+  document.getElementById('frame').src = "https://www.hackerrank.com";
+}
+function w3() {
+  document.getElementById('frame').src = "https://www.w3schools.com";
+}
+</script>
+
+<body>
+	<h2>My First sub-window</h2>
+    <button onclick="hackerrank()">HackerRank</button>
+    <button onclick="wiki()">Wikipedia</button>
+    <button onclick="w3()">W3Schools</button>
+    <br>
+    <iframe src="" style = "height:80%;width:80%" id= "frame"></iframe>
+</body>
+</html>

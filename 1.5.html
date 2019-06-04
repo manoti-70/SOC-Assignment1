@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1.5</title>
+</head>
+
+<script>
+function random() {
+	var data = document.getElementById("url").value;
+	document.getElementById('newframe1').src = data;
+}
+function resolution(){
+	document.getElementById("newframe1").style.height = document.getElementById("height").value;
+	document.getElementById("newframe1").style.widht = document.getElementById("width").value;
+}
+</script>
+
+<body>
+	Enter url:<input name="url" type="text" id="url"><br>
+    <button onclick="random()">Go</button><br>
+    Height:<input name="height" type="text" id="height"> 
+    Widht:<input name="widht" type="text" id="widht"><br>  
+    <button onclick="resolution()">Change Resolution</button> 
+    <iframe src="" style = "height:80%;width:80%" id= "newframe1"></iframe><br>
+
+</body>
+</html>
